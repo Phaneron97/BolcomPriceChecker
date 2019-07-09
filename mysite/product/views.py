@@ -10,3 +10,7 @@ def new(request):
 
 def index(request):
     return HttpResponse("All products in list")
+
+
+def detail(request):
+    return HttpResponse("Product detail")
