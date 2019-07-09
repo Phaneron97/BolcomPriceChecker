@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('searchprice/', include('searchprice.urls')),  # in folder 'searchprice' get file 'urls'
+    path('product/', include('product.urls')),  # in folder 'product' get file 'urls'
     path('admin/', admin.site.urls)
 ]

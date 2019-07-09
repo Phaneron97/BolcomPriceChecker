@@ -4,5 +4,9 @@ from django.shortcuts import render
 # Create your views here.
 
 
+def new(request):
+    return HttpResponse('add new product')
+
+
 def index(request):
-    return HttpResponse('Hello world')
+    return HttpResponse("All products in list")
