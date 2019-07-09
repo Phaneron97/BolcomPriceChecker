@@ -9,19 +9,22 @@ def check_price():
     page = requests.get(URL, headers=headers)
 
     # gets html of stored URL
-    pageContent = BeautifulSoup(page.content, 'html.parser')
+    page_content = BeautifulSoup(page.content, 'html.parser')
 
-    # print(pageContent.prettify())
+    # prints all html content of url
+    # print(page_content.prettify())
 
-    title = pageContent.find(id="productTitle").get_text()
+    title = page_content.find(id="productTitle").get_text()
 
     # gets text id with price, converts to float, ignores first char
-    price = float(pageContent.find(id="priceblock_ourprice").get_text()[1:100])
+    price = float(page_content.find(id="priceblock_ourprice").get_text()[1:])
 
-    print(title.strip())
+    print("Product: " + title.strip())
     print(price)
 
     if(price < 20):
         print("Price is lowered!")
 
+
 check_price()
+
