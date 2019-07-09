@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'product.apps.ProductConfig'  # Django knows about products app this way. automatically adds model as table to DB
 ]
 
 MIDDLEWARE = [
