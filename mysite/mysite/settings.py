@@ -31,13 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
+    'django.contrib.admin',  # creates admin pages
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'product.apps.ProductConfig'  # Django knows about products app this way. automatically adds model as table to DB
+    'product.apps.ProductConfig'  # Django now knows about product app. automatically adds model as table to DB
 ]
 
 MIDDLEWARE = [
