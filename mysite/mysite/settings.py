@@ -30,6 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+DATE_INPUT_FORMATS = ['%d-%m-%Y']
+
 INSTALLED_APPS = [
     'django.contrib.admin',  # creates admin pages
     'django.contrib.auth',
