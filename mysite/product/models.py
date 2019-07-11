@@ -16,3 +16,13 @@ class Product(models.Model):  # class inherits all from class model
         max_length=2083
     )
     date = models.DateTimeField()
+
+    # ID's for crawler to find html blocks
+    title_id = models.CharField(
+        max_length=255,
+        blank=True
+    )
+    price_id = models.CharField(
+        max_length=255,
+        blank=True
+    )
