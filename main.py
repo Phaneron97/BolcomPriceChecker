@@ -22,7 +22,7 @@ def check_price():
     print("Product: " + title.strip())
     print(price)
 
-    if(price < 20):
+    if price < 20:
         print("Price is lowered!")
 
 
