@@ -18,13 +18,13 @@ def check_price():
 
     # gets text id with price, converts to float, ignores first char
     price = float(page_content.find(id="priceblock_ourprice").get_text()[1:])
-
+    """
     print("Product: " + title.strip())
     print(price)
 
     if price < 20:
-        print("Price is lowered!")
+        print("Price is lowered!")"""
 
 
-check_price()
+# check_price()
 
